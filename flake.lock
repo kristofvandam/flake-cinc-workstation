@@ -3,13 +3,13 @@
     "cinc-workstation": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-hUV2/TlE1SgjDmU5ouZZQEiWn9i6B5J+BhVBSh+9nlg=",
+        "narHash": "sha256-ghDCfBXzRIbte17RjzU7SEqv3y6zlLtq+sqrCklbLOI=",
         "type": "file",
-        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/23.4.1032/debian/11/cinc-workstation_23.4.1032-1_amd64.deb"
+        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/24.6.1066/debian/11/cinc-workstation_24.6.1066-1_amd64.deb"
       },
       "original": {
         "type": "file",
-        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/23.4.1032/debian/11/cinc-workstation_23.4.1032-1_amd64.deb"
+        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/24.6.1066/debian/11/cinc-workstation_24.6.1066-1_amd64.deb"
       }
     },
     "flake-parts": {
