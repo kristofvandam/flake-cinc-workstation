@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    cinc-workstation.url = "http://downloads.cinc.sh/files/stable/cinc-workstation/24.6.1066/debian/11/cinc-workstation_24.6.1066-1_amd64.deb";
+    cinc-workstation.url = "http://downloads.cinc.sh/files/stable/cinc-workstation/24.6.1066/debian/11/cinc-workstation_24.8.1068-1_amd64.deb";
     cinc-workstation.flake = false;
   };
 
