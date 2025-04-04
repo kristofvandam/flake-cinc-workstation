@@ -36,7 +36,7 @@
           installPhase = ''
             mkdir -p $out/bin
             for bin in $src/cinc-workstation/bin/*; do
-              echo -e "#!/usr/bin/env bash\n$buildInputs/bin/cinc-workstation-run $(basename $bin) \$@" > $out/bin/$(basename $bin)
+              echo -e "#!/usr/bin/env bash\n$buildInputs/bin/cinc-workstation-run $(basename $bin) \"\$@\"" > $out/bin/$(basename $bin)
               chmod +x $out/bin/$(basename $bin)
             done
           '';

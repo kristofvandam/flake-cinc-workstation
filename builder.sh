@@ -18,7 +18,7 @@ done
 # Create a wrapper so we can run the binaries without entering a shell
 cat > $out/cinc-workstation/bin/cw-wrapper <<EOF
 #!$SHELL
-/opt/cinc-workstation/bin/\$@
+/opt/cinc-workstation/bin/"\$@"
 EOF
 chmod +x $out/cinc-workstation/bin/cw-wrapper
 
