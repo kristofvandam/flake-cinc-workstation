@@ -3,13 +3,13 @@
     "cinc-workstation": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-hUV2/TlE1SgjDmU5ouZZQEiWn9i6B5J+BhVBSh+9nlg=",
+        "narHash": "sha256-Aj7iVmTLvvX5CmeKfw+i2uFsfXx9Xt5vyPzuAg8tKGc=",
         "type": "file",
-        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/23.4.1032/debian/11/cinc-workstation_23.4.1032-1_amd64.deb"
+        "url": "https://downloads.cinc.sh/files/stable/cinc-workstation/24.8.1068/debian/12/cinc-workstation_24.8.1068-1_amd64.deb"
       },
       "original": {
         "type": "file",
-        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/23.4.1032/debian/11/cinc-workstation_23.4.1032-1_amd64.deb"
+        "url": "https://downloads.cinc.sh/files/stable/cinc-workstation/24.8.1068/debian/12/cinc-workstation_24.8.1068-1_amd64.deb"
       }
     },
     "flake-parts": {
@@ -17,11 +17,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1704152458,
-        "narHash": "sha256-DS+dGw7SKygIWf9w4eNBUZsK+4Ug27NwEWmn2tnbycg=",
+        "lastModified": 1743550720,
+        "narHash": "sha256-hIshGgKZCgWh6AYJpJmRgFdR3WUbkY04o82X05xqQiY=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "88a2cd8166694ba0b6cb374700799cec53aef527",
+        "rev": "c621e8422220273271f52058f618c94e405bb0f5",
         "type": "github"
       },
       "original": {
@@ -32,11 +32,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1704194953,
-        "narHash": "sha256-RtDKd8Mynhe5CFnVT8s0/0yqtWFMM9LmCzXv/YKxnq4=",
+        "lastModified": 1745234285,
+        "narHash": "sha256-GfpyMzxwkfgRVN0cTGQSkTC0OHhEkv3Jf6Tcjm//qZ0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd645e8668ec6612439a9ee7e71f7eac4099d4f6",
+        "rev": "c11863f1e964833214b767f4a369c6e6a7aba141",
         "type": "github"
       },
       "original": {
@@ -48,19 +48,16 @@
     },
     "nixpkgs-lib": {
       "locked": {
-        "dir": "lib",
-        "lastModified": 1703961334,
-        "narHash": "sha256-M1mV/Cq+pgjk0rt6VxoyyD+O8cOUiai8t9Q6Yyq4noY=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b0d36bd0a420ecee3bc916c91886caca87c894e9",
+        "lastModified": 1743296961,
+        "narHash": "sha256-b1EdN3cULCqtorQ4QeWgLMrd5ZGOjLSLemfa00heasc=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "e4822aea2a6d1cdd36653c134cacfd64c97ff4fa",
         "type": "github"
       },
       "original": {
-        "dir": "lib",
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
         "type": "github"
       }
     },
