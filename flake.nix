@@ -20,7 +20,7 @@
           rpath = lib.makeLibraryPath [ pkgs.libxcrypt-legacy ];
           builder = ./builder.sh;
         };
-        cinc-workstation-run = pkgs.buildFHSUserEnv {
+        cinc-workstation-run = pkgs.buildFHSEnv {
           name = "cinc-workstation-run";
           targetPkgs = pkgs: with pkgs; [ coreutils glibc cinc-workstation-sources ];
           extraBuildCommands = ''
