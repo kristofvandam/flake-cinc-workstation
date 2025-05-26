@@ -20,7 +20,7 @@
           rpath = lib.makeLibraryPath [ pkgs.libxcrypt-legacy ];
           builder = ./builder.sh;
         };
-        cinc-workstation-run = pkgs.buildFHSUserEnv {
+        cinc-workstation-run = pkgs.buildFHSEnv {
           name = "cinc-workstation-run";
           targetPkgs = pkgs: with pkgs; [ coreutils glibc cinc-workstation-sources ];
           extraBuildCommands = ''
@@ -38,6 +38,11 @@
             for bin in $src/cinc-workstation/bin/*; do
               echo -e "#!/usr/bin/env bash\n$buildInputs/bin/cinc-workstation-run $(basename $bin) \"\$@\"" > $out/bin/$(basename $bin)
               chmod +x $out/bin/$(basename $bin)
+
+              # also add a version where cinc- is replaced with chef- for compatibility
+              chef_bin=$(echo $(basename $bin) | sed 's/^cinc-/chef-/')
+              echo -e "#!/usr/bin/env bash\n$buildInputs/bin/cinc-workstation-run $chef_bin \"\$@\"" > $out/bin/$chef_bin
+              chmod +x $out/bin/$chef_bin
             done
           '';
         };
